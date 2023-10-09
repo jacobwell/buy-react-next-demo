@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* amazon.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+header {
+  background-color: #232F3E;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-family: Arial, sans-serif; /* Specify the desired font */
+}
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  width: 100%;
+}
+.product-cell {
+  border: 1px solid #ccc;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.how-it-works-button {
+margin:20px;
+text-decoration: none;
+}
+.button-container {
+    margin: 10px;
+}
+.buy-now-button {
+  background-color: #FF9900;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+#search-form {
+  display: flex;
+  background-color: #F4F4F4;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.search-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+}
+.search-button {
+  background: #FF9900;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+}
+#search-button svg {
+  fill: white;
+}
+.loading-spinner {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loading-spinner svg {
+  width: 100px;
+  height: 100px;
+  animation: rotate 2s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* amazon.css (Your existing CSS) */
+/* ... (Your existing styles) */
+
+/* New styles for the "About" page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #232F3E;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+}
+
+h2 {
+  color: #232F3E;
+  font-size: .75em;
+}
+
+h1 {
+  color: white;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+.step {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #e9e9e9;
+  border-radius: 4px;
+}
+
+.how-it-works {
+  background-color: #232F3E;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.how-it-works h2 {
+  color: white;
+}
+
+.back-to-home {
+  background-color: #232F3E;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 20px;}
+
+.back-to-home:hover {
+  background-color: #1C2733;
+}
+
+/* End of new styles */
+
+
+.product-cell {
+  border: 1px solid #ccc;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px; /* Set a fixed height for the product boxes */
+}
+
+
+.product-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+.product-cell {
+  border: 1px solid #ccc;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px; /* Set a fixed height for the product boxes */
+}
+
+.product-title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%; /* Ensure the title doesn't exceed the box width */
+}
+
+.product-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-top: 35px;
+}
+
+.product-price {
+  margin-top: auto; /* Push the price to the bottom of the box */
+}
+
+.buy-now-button {
+  background-color: #FF9900;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  width: 100%;
+}
+
+/* CSS file */
+.about-page h2 {
+  font-size: 1.5em; /* Adjust the font size as needed */
+  /* Add any other styles you want to apply to h2 elements on the About page */
+}
+
+
+/* Updated CSS with media query */
+@media (min-width: 768px) {
+  #product-list {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minmax values as needed */
+  }
+}
